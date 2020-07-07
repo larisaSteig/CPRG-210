@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Css Toggle</title>
+    <style>
+        .fancy-bg {
+            background-color: rebeccapurple;
+        }
+        .cool {
+            color: orange;
+            background: green;
+            font:20px;
+        
+            
+        }
+        .active {
+            background-color: red;
+            color:white;
+        }
+    </style>
+</head>
+<body id="heel" class= "red centered">
+    <h1 id="extra"> hello</h1>
+    <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde molestias mollitia, qui praesentium iste aperiam, placeat magni eligendi odit corporis quibusdam reiciendis dicta perferendis iure. Sint nesciunt molestias repellendus harum.</p>
+    <button class="btn">click me</button>
+
+    <ul>
+        <li>one</li>
+        <li>two</li>
+        <li>three</li>
+        <li>four</li>
+    </ul>
+
+
+
+    <script>
+        const name = "cucumber";
+        const age =44;
+        const body = document.getElementById('heel')
+        const btn = document.querySelector('button')
+
+       console.log(`${name} is ${age}`);
+
+       btn.addEventListener('click', toggleBtn)
+    
+    function toggleBtn(){
+        heel.classList.toggle('fancy-bg')
+    }
+
+    function colorChange {
+        
+    }
+    </script>
+</body>
+</html>
