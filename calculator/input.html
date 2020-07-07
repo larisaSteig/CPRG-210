@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adding machine</title>
+</head>
+<body>
+    <form action="">
+        <fieldset>
+            <legend>Enter the number to add</legend>
+            <div class="wrapper">
+                <div>
+                    <label for="num1">First Number</label>
+                    <input type ="number" id="num1" num="num1" placeholder="num1">
+                </div>
+                <div>
+                    <label for="num2">Second Number</label>
+                    <input type ="number" id="num2" num="num2" placeholder="num2">
+                </div>
+            
+                <div>
+                    <label for="operation">Opration</label>
+                    <select name="operation" id="operation">
+                        <option value="add">Add</option>
+                        <option value="substract">Sustract</option>
+                        <option value="multiply">Multiply</option>
+                        <option value="divide">Divive</option>
+                    </select>
+                </div>
+            </div>
+            <button type="submit">calculate</button>
+        </fieldset>
+        <p> Hello world</p>
+    </form>
+
+    <script>
+        const form = document.querySelector('form')
+        const para = document.querySelector('p')
+      
+       
+       
+        function formHandler(event){
+            event.preventDefault();
+            let result // Result for th emathematical operation // Can be defined but not attahced the value
+            let glue // Add the math operator
+            output = form.operation.value
+            
+            if ( output ==="add"){
+            result = parseFloat(form.num1.value) + parseFloat(form.num2.value)
+            glue = "plus"
+            } else if(output ==="substract") {
+             result = form.num1.value - form.num2.value; 
+             glue="minus"
+            } else if( output ==="multiply"){
+                result = form.num1.value * form.num2.value;
+                glue="multiply"
+            } else {
+                result = form.num1.value / form.num2.value;
+                glue ="divide"
+            }
+            
+                // para.innerHTML= 'The sum is' +  'parseFloat(form.num1.value)' + parseFloat(form.num2.value);
+                para.innerHTML =`${form.num1.value} ${glue} ${form.num2.value} equals to ${result}`;
+            }
+
+        form.addEventListener('click', formHandler)
+
+
+    </script>
+</body>
+</html>
