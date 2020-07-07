@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Custom CSS-->
+    <link rel="stylesheet" href="css/login.css">
+     <!-- Google Font -->
+     <link href="https://fonts.googleapis.com/css?family=Nunito:200,300,400,700" rel="stylesheet">
+     <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;700&display=swap" rel="stylesheet">
+     <!--Font Awesome-->
+     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css">
+     <title>Lost in Paradise</title>
+</head>
+<body>
+
+    <header>
+        <h1 class="logo" ><i class="fas fa-route"></i><a href="index.html"> Adventure</a></h1>  
+          <nav class ="navigation">
+            <ul>
+                <li ><a href="index.html" >Home</a></li>
+                <li><a href="">Destination</a></li>
+                <li><a href="index.html#contact">Contact Us</a></li>
+                <li><a href="login.html" class="active">Login</a></li>
+                <li><a href="register.html">Sign Up</a></li>
+            </ul>
+          </nav>
+        
+      </header>
+
+      <main>
+          <section id="content">
+             <form>
+                 <h2>Login Form</h2>
+                    <div class ="inner">
+                        <div>
+                            <label for="email">Email</label>
+                            <input type="email" name="Email" id = "email" placeholder="you@example.com" required minlength="6">
+                        </div>   
+                        <div>       
+                            <label for="password">Password</label>
+                            <input type="password" name = "password" id="password" placeholder="Enter password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
+                            title="Must contain at least one  number and one uppercase and lowercase letter, and at least 8 or more characters">
+                        </div>
+                    </div>
+                   
+                        <input type="submit" value ="Log in"/>
+                    <div class="x">
+                        <a href="#">Lost your password?</a>
+                        <a href="register.html">Register</a>
+                    </div>
+                  
+            </form>
+        </section>
+    </main>
+
+    <footer>&copy;Adventure Travel Agency 2020</footer>
+    
+</body>
+</html>

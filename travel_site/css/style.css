@@ -1,0 +1,389 @@
+body {
+    margin:0;
+    padding:0;
+ 
+}
+/* HERO SECTION /HEADER */
+header {
+    display: flex;
+    justify-content: center;
+    /* position: fixed; */
+    width:100vw;
+    /* justify-content: space-between; */
+    align-items: center;
+    font-family: 'Nunito Sans', sans-serif;
+    background: linear-gradient(rgb(169, 197, 216), white);
+    position:fixed;
+    
+}
+
+h1 a{
+    color: green;
+    font-family: 'Caveat', cursive;
+}
+.hero {
+    display:flex;
+    flex-direction: column;
+    height: 50vh; 
+    background:lightblue url('../img/main.jpg') no-repeat 85% 25%; 
+    background-size: cover; 
+    font-family: 'Caveat', cursive;
+    align-items: flex-end;
+  
+}
+.description{
+    display:flex; 
+    justify-content: space-around;
+    font-family: 'Caveat', cursive;
+    width: 90vw;
+    margin: auto;
+ 
+}
+.fa-route {
+    color:#faa13c;
+    size: 2em;
+}
+
+/* NAVBAR */
+.navigation {
+    display: flex;
+    
+   
+
+}
+.logo {
+    margin: 0 0 0em 4em
+}
+
+.logo, .navigation {
+ 
+    list-style: none;
+    text-transform: capitalize;
+}
+
+.navigation a, .logo a {
+    text-decoration: none;
+    letter-spacing: 0.3rem;
+  
+}
+
+.navigation ul {
+    display:flex;
+    list-style-type: none;
+    
+
+}
+
+.navigation a {
+    display: block;
+    padding: 1em;
+    color:#268545;
+    font-weight: 400;
+    font-size: 20px;
+    text-align: center;
+    
+
+}
+
+.navigation .active {
+ color: orange;
+ text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.12);
+  
+}
+.navigation a:hover {
+    color:white;
+    background-color:#268545;
+    border-radius: 15%;
+}
+
+button {
+    display: none;
+}
+
+
+.visible {
+    visibility: visible;
+    offset: auto;
+    offset-position: 50px 0 0;
+    background:white;
+   
+
+    
+}
+/* END OF NAVBAR */
+.hero h1 {
+    margin: 5% 10% 0 0;
+    font-size: 3em;
+    color:#268545
+}
+
+.hero p {
+    font-size: 1.5em;
+    margin-right: 10%;
+    width: 25%;
+    color:#268545
+}
+
+.hero button {
+    background: #faa13c;
+	padding: 8px 20px 8px 20px;
+    border-radius: 5px;
+    color: #268545;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.12);
+    font: normal 30px 'Nunito Sans', sans-serif;
+    box-shadow: inset 0px 2px 2px 0px rgba(255, 255, 255, 0.17);
+	border: 1px solid #257C9E;
+    font-size: 20px;
+    font-weight: 700;
+    /* opacity: 0.7; */
+    margin-right:18%;
+}
+
+/* SECOND PART OF THE PAGE WITH CONTACT INFO AND ABOUT US  */
+.description div {
+    width: 50%;
+    display: flex;
+    flex-flow: column wrap;
+    font-size: 1.5em;
+
+}
+
+.description h2 {
+    font-size: 1.5em;
+    color: #faa13c;
+    text-shadow: black 2px 2px;
+    margin-top: 2em;
+
+}
+
+.description img {
+    margin-top:2em;
+    height: 80vh;
+    flex-grow: 2 1 380px;
+    border-radius: 15%;
+}
+
+.description ul {
+    margin:0;
+}
+
+.description p{
+    margin-top: 0;
+}
+
+/* CONTACT FORM */
+
+#fs-frm{
+    align-items: center;
+    width: 80%;
+}
+#fs-frm-inputs{
+    display: flex;
+    flex-direction: column;
+    border: 1px dotted orange;
+    border-radius: 5%;
+    margin-top:2%;
+    width: 80%;
+
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+textarea{
+    display:block;
+    box-sizing: border-box;
+    width: 100%;
+ 
+	padding: 8px;
+    border-radius: 6px;
+    border: 2px solid #fff;
+    box-shadow: inset 0px 1px 1px rgba(0, 0, 0, 0.33);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.12)
+}
+
+input[type="submit"] {
+    background: #faa13c;
+	padding: 8px 20px 8px 20px;
+    border-radius: 5px;
+    color: #268545;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.12);
+    font: normal 30px 'Nunito Sans', sans-serif;
+    box-shadow: inset 0px 2px 2px 0px rgba(255, 255, 255, 0.17);
+	border: 1px solid #257C9E;
+    font-size: 20px;
+    font-weight: 700;
+    margin-top: 2%;
+    margin-bottom: 5%;
+  
+}
+
+footer {
+   
+    background-color: lightskyblue;
+    color: black;
+    text-align: center;
+    font-size: 12px;
+    border: 1px solid black;
+    text-transform: capitalize;
+    /* position:fixed; */
+}
+
+
+
+/* responsive design for smaller sizes */
+
+@media (max-width: 1120px) {
+    header {
+        flex-direction: column;
+    }
+
+    .logo {
+        margin:0;
+    }
+
+    .navigation ul {
+        margin-top:50px;
+      
+    }
+    .navigation {
+        width:100%;
+        justify-content:space-around;
+       
+        margin-bottom: 0;
+    }
+
+    .navigation a {
+        display: block;
+        padding: 1em;
+        color:#268545;
+        font-weight: 400;
+        font-size: 15px;
+        text-align: center;
+        
+    
+    }
+    .hero h1 {
+        margin: 5% 10% 0 0;
+        font-size: 2em;
+        color:#268545;
+    }
+    
+    .hero p {
+        font-size: 1.5em;
+        margin-right: 10%;
+        width: 25%;
+        color:#268545;
+    }
+     .description p{
+        /* width: 30%; */
+      
+        font-size:1em;
+       
+    }
+       .description img {
+       
+        width: 40vw;
+        height: 60vh;
+        border-radius: 15%;
+    
+    } 
+    
+}
+
+
+@media (max-width: 680px) {
+
+    .navigation {
+        width:100%;
+        justify-content:flex-start;
+       
+        margin-bottom: 0;
+    }
+    
+    .logo {
+        font-size: 1.5em;
+        align-self: left;
+    }
+
+    nav li {
+       
+    }
+
+    nav ul {
+       
+        position: absolute;
+
+        visibility:hidden;
+        display: inline-block;
+        flex-direction: column;
+        align-items: flex-start;
+        padding-left:0;
+        /* width:inherit; */
+    
+        /* overflow-wrap: normal; */
+       
+    }
+
+  
+    
+    
+    .navigation a {
+        display: block; 
+        padding: 0.5em;
+       
+       
+       left:0;
+       top:0;
+      
+     
+        font-size: 1em;
+        text-align: center;
+        border-top: 1px solid rgba(255,255,255,0.3); 
+        border-bottom: 1px solid rgba(0,0,0,0.1);
+     
+    }
+  
+    nav button {
+        display:block;
+        width: 50px;
+        height:50px;
+        background: orange;
+        line-height: 1.7;
+        color: green;
+        /* float:left; */
+        
+       
+    }
+
+    .fa-bars{
+        width: 100%;
+        color:green;
+        float:right;
+    }
+    .description div {
+       width: 100%;
+    }
+   
+    .description h2 {
+        margin-top:5px;
+        margin-bottom: 5px;;
+
+    }
+    .description p{
+       
+        /* margin-top:1em; */
+        /* margin-right: 1em; */
+        font-size:1em;
+       
+        /* width: 30vw;
+        height: 25%; */
+        /* align-self: center; */
+           
+    }
+   
+    .description img {
+      display: none;
+    
+    }
+}

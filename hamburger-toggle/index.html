@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>hamburger toggle</title>
+    <style>
+                /* Import a fancy font from Google Fonts */
+        @import url('https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300&display=swap');
+
+        nav ul{
+            display: none;
+        }
+
+        nav ul.visible {
+            display:block;
+        }
+
+        @media (orientation:landscape) {
+            nav ul {
+                display: flex;
+                flex-direction: row;
+            }
+            nav ul li {
+                flex:auto;
+            }
+            nav button{
+                display: none;
+            }
+        }
+        
+
+       
+        body {
+        
+        background-color: lightgrey;
+        margin: auto 10vw;
+
+        font-family: 'Open Sans Condensed', Arial, Helvetica, sans-serif;
+        font-variant: small-caps;
+        font-weight: bold;
+        font-size: 36px;
+        }
+
+        ul {
+        background-color: white;
+        border: 1px solid black;
+        padding: 0;
+        }
+
+        ul li {
+        list-style: none;
+        border: 1px solid black;
+        text-align: center;
+        }
+
+        a {
+        padding: 0.5em;
+        text-decoration: none;
+        color: indigo;
+        }
+
+        a:hover {
+        background-color: papayawhip;
+        }
+
+        /* This is a tricky one. Links are inline by default. We need to set them to block so that proper padding and width can be applied. */
+        a {
+        display: block;
+        }
+
+        
+    </style>
+</head>
+<body>
+    
+    <nav>
+        <button class ="btn">Menue Toggle</button>
+        <ul class= "visible">
+          <li id="fighter"><a href="#">Fighter</a></li>
+          <li id="barbarian"><a href="#">Barbarian</a></li>
+          <li id="bard"><a href="#">Bard</a></li>
+          <li id="rogue"><a href="#">Rogue</a></li>
+        </ul>
+      </nav>
+      <script>
+          const button =document.querySelector('.btn');
+          const menue = document.querySelector ('nav ul');
+
+          button.addEventListener('click',function() {
+               menue.classList.toggle('visible')
+          });
+
+
+    </script>
+</body>
+</html>
