@@ -1,4 +1,7 @@
 /* responsive design for smaller sizes */
+
+/*  Toggle button for the nav bar */
+
 button {
     display: none;
 }
@@ -8,6 +11,8 @@ button {
     transition: ease-in 1s;
     height:50vh;
 }
+
+/* Medium screen sizes */
 @media (max-width: 1120px) {
     header {
         flex-direction: column;
@@ -16,13 +21,18 @@ button {
     .logo {
         margin:0;
     }
-
     
+     
     .navigation {
         width:100%;
         justify-content:space-around;
        
         margin-bottom: 0;
+    }
+
+    .navigation ul {
+        margin-bottom: 0;
+        margin-top:0;
     }
 
     .navigation a {
@@ -68,7 +78,45 @@ button {
    }
     
 
+   /* registration page */
 
+   /* REGISTRATION FORM */
+
+.register {
+  
+    width:50vw;
+}	
+
+
+button:hover {
+    opacity:1;
+}
+
+sup {
+    color:red;
+}
+/* .cancelbtn {
+    padding: 8px 20px 8px 20px;
+    background-color: #268545;
+    color: #faa13c;
+  } */
+
+  footer {
+    position: absolute;
+    bottom:0;
+    width: 99.9%;
+    background-color: lightskyblue;
+    color: black;
+    text-align: center;
+    font-size: 12px;
+    border: 1px solid black;
+    text-transform: capitalize;
+    /* position:fixed; */
+}
+
+
+
+/* small screen sizes */
 
 @media (max-width: 680px) {
 
@@ -83,8 +131,9 @@ button {
         margin-bottom: 0;
     }
     
-    .logo{
+    .logo, .logo a{
         display: flex;
+        margin-right: 0.5em;
 
     }
    
@@ -159,4 +208,12 @@ button {
       display: none;
     
     }
+
+    #content {
+        
+        width:300px;
+       
+     
+    }
+
 }}
