@@ -1,19 +1,20 @@
+/* RESET */
+
 body {
     margin:0;
     padding:0;
  
 }
-/* HERO SECTION /HEADER */
+/* HEADER  / HERO /DIV set up*/
 header {
     display: flex;
     justify-content: center;
-    /* position: fixed; */
     width:100vw;
     /* justify-content: space-between; */
     align-items: center;
     font-family: 'Nunito Sans', sans-serif;
     background: linear-gradient(rgb(169, 197, 216), white);
-    position:fixed;
+    
     
 }
 
@@ -41,16 +42,14 @@ h1 a{
 }
 .fa-route {
     color:#faa13c;
-    size: 2em;
+    /* resize: 2em; */
 }
 
 /* NAVBAR */
 .navigation {
     display: flex;
     
-   
-
-}
+  }
 .logo {
     margin: 0 0 0em 4em
 }
@@ -103,14 +102,13 @@ button {
 
 .visible {
     visibility: visible;
-    offset: auto;
-    offset-position: 50px 0 0;
-    background:white;
-   
-
-    
+    background:rgba(255,255,255,0.5);
+    transition: ease-in 2s;
+    height:50vh;
 }
 /* END OF NAVBAR */
+
+/* HERO DIV elements */
 .hero h1 {
     margin: 5% 10% 0 0;
     font-size: 3em;
@@ -143,7 +141,7 @@ button {
 .description div {
     width: 50%;
     display: flex;
-    flex-flow: column wrap;
+    flex-flow: column;
     font-size: 1.5em;
 
 }
@@ -159,8 +157,9 @@ button {
 .description img {
     margin-top:2em;
     height: 80vh;
-    flex-grow: 2 1 380px;
+    /* flex: 2 1 380px; */
     border-radius: 15%;
+    width: 40%;
 }
 
 .description ul {
@@ -227,163 +226,4 @@ footer {
     border: 1px solid black;
     text-transform: capitalize;
     /* position:fixed; */
-}
-
-
-
-/* responsive design for smaller sizes */
-
-@media (max-width: 1120px) {
-    header {
-        flex-direction: column;
-    }
-
-    .logo {
-        margin:0;
-    }
-
-    .navigation ul {
-        margin-top:50px;
-      
-    }
-    .navigation {
-        width:100%;
-        justify-content:space-around;
-       
-        margin-bottom: 0;
-    }
-
-    .navigation a {
-        display: block;
-        padding: 1em;
-        color:#268545;
-        font-weight: 400;
-        font-size: 15px;
-        text-align: center;
-        
-    
-    }
-    .hero h1 {
-        margin: 5% 10% 0 0;
-        font-size: 2em;
-        color:#268545;
-    }
-    
-    .hero p {
-        font-size: 1.5em;
-        margin-right: 10%;
-        width: 25%;
-        color:#268545;
-    }
-     .description p{
-        /* width: 30%; */
-      
-        font-size:1em;
-       
-    }
-       .description img {
-       
-        width: 40vw;
-        height: 60vh;
-        border-radius: 15%;
-    
-    } 
-    
-}
-
-
-@media (max-width: 680px) {
-
-    .navigation {
-        width:100%;
-        justify-content:flex-start;
-       
-        margin-bottom: 0;
-    }
-    
-    .logo {
-        font-size: 1.5em;
-        align-self: left;
-    }
-
-    nav li {
-       
-    }
-
-    nav ul {
-       
-        position: absolute;
-
-        visibility:hidden;
-        display: inline-block;
-        flex-direction: column;
-        align-items: flex-start;
-        padding-left:0;
-        /* width:inherit; */
-    
-        /* overflow-wrap: normal; */
-       
-    }
-
-  
-    
-    
-    .navigation a {
-        display: block; 
-        padding: 0.5em;
-       
-       
-       left:0;
-       top:0;
-      
-     
-        font-size: 1em;
-        text-align: center;
-        border-top: 1px solid rgba(255,255,255,0.3); 
-        border-bottom: 1px solid rgba(0,0,0,0.1);
-     
-    }
-  
-    nav button {
-        display:block;
-        width: 50px;
-        height:50px;
-        background: orange;
-        line-height: 1.7;
-        color: green;
-        /* float:left; */
-        
-       
-    }
-
-    .fa-bars{
-        width: 100%;
-        color:green;
-        float:right;
-    }
-    .description div {
-       width: 100%;
-    }
-   
-    .description h2 {
-        margin-top:5px;
-        margin-bottom: 5px;;
-
-    }
-    .description p{
-       
-        /* margin-top:1em; */
-        /* margin-right: 1em; */
-        font-size:1em;
-       
-        /* width: 30vw;
-        height: 25%; */
-        /* align-self: center; */
-           
-    }
-   
-    .description img {
-      display: none;
-    
-    }
 }

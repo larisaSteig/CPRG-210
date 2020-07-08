@@ -5,6 +5,7 @@ body {
     font-size: 16px;
     background-image: blur;
     background-image: url('../img/right.jpg');
+    background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
     position: relative;
@@ -30,20 +31,14 @@ h1 a{
 .hero {
     display:flex;
     flex-direction: column;
-    
-    /* margin:auto; */
     height: 50vh; 
     background:lightblue url('../img/right.jpg') no-repeat 85% 25%; 
-     background-size: cover; 
-    /* font-variant: small-caps; */
-    /* width: 80%;  */
-    
+    background-size: cover; 
     align-items: flex-end;
   
 }
 .description, .contact {
     display:flex; 
-    /* flex-direction: column; */
     justify-content: space-around;
     font-family: 'Caveat', cursive;
     width: 80vw;
@@ -99,6 +94,9 @@ h1 a{
     border-radius: 15%;
 }
 
+
+
+/* ****END OF NAVBAR */
 .hero h1 {
     margin: 5% 10% 0 0;
     font-size: 3em;
@@ -151,7 +149,7 @@ h1 a{
  
 }
 
-#content h1 {
+#content h2 {
 	color:#faa13c;
 	font: bold 25px 'Nunito Sans', sans-serif;
 	letter-spacing: -0.05em;
@@ -161,7 +159,7 @@ h1 a{
 }
 
 
-#content h1:after {
+#content h2:after {
 	content: "";
 	/* height: 1px; */
 	display: block;

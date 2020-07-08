@@ -1,0 +1,162 @@
+/* responsive design for smaller sizes */
+button {
+    display: none;
+}
+.visible {
+    visibility: visible;
+    background:rgba(255,255,255,0.5);
+    transition: ease-in 1s;
+    height:50vh;
+}
+@media (max-width: 1120px) {
+    header {
+        flex-direction: column;
+    }
+
+    .logo {
+        margin:0;
+    }
+
+    
+    .navigation {
+        width:100%;
+        justify-content:space-around;
+       
+        margin-bottom: 0;
+    }
+
+    .navigation a {
+        display: block;
+        padding: 1em;
+        color:#268545;
+        font-weight: 400;
+        font-size: 15px;
+        text-align: center;
+        
+    
+    }
+    .hero h1 {
+        margin: 5% 10% 0 0;
+        font-size: 2em;
+        color:#268545;
+    }
+    
+    .hero p {
+        font-size: 1.5em;
+        margin-right: 10%;
+        width: 25%;
+        color:#268545;
+    }
+     .description p{
+        /* width: 30%; */
+      
+        font-size:1em;
+       
+       
+    }
+    .description img {
+       
+        width: 40vw;
+        height: 60vh;
+        border-radius: 15%;
+        margin: auto 0.5em;
+    
+    } 
+
+   #contact {
+       margin-top: 0.5em;;
+   }
+    
+
+
+
+@media (max-width: 680px) {
+
+    header {
+        flex-direction: row-reverse;
+        justify-content: ;
+    }
+    .navigation {
+        width:100%;
+        justify-content:flex-start;
+       
+        margin-bottom: 0;
+    }
+    
+    .logo{
+        display: flex;
+
+    }
+   
+    .hero p{
+         color:#faa13c;
+    }
+    nav ul {
+       
+        position: absolute;
+        margin-top:50px;
+      
+        visibility:hidden;
+        display: inline-block;
+        flex-direction: column;
+        align-items: flex-start;
+        padding-left:0;
+            
+    }
+    
+      .navigation a {
+        display: block; 
+        padding: 0.5em;
+        left:0;
+        top:0;
+        font-size: 1em;
+        text-align: center;
+        border-top: 1px solid rgba(255,255,255,0.3); 
+        border-bottom: 1px solid rgba(0,0,0,0.1);
+     
+    }
+  
+    nav button {
+        order:-1;
+        display:inline-block;
+        width: 50px;
+        height:50px;
+        background: orange;
+        line-height: 1.7;
+        color: green;
+        /* float:left; */
+        
+       
+    }
+
+    .fa-bars{
+        width: 100%;
+        color:green;
+        float:right;
+    }
+    .description div {
+       width: 100%;
+    }
+   
+    .description h2 {
+        margin-top:5px;
+        margin-bottom: 5px;;
+
+    }
+    .description p{
+       
+        /* margin-top:1em; */
+        /* margin-right: 1em; */
+        font-size:1em;
+       
+        /* width: 30vw;
+        height: 25%; */
+        /* align-self: center; */
+           
+    }
+   
+    .description img {
+      display: none;
+    
+    }
+}}
