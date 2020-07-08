@@ -239,16 +239,4 @@ sup {
     text-transform: capitalize;
     /* position:fixed; */
 }
-/* .register form { 
-    border: 2px solid green;
-    padding: 2%;
-    display: flex;
-    flex-direction: column;
-    
-    /* positioning in the middle */
-    /* position: fixed;
-    top:50%;
-    left:50%;
-    transform: translate(-50%,-50%);  */
-    /* end of positionin in the middle */
- */
+

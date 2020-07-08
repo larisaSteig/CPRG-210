@@ -7,9 +7,10 @@ button {
 }
 .visible {
     visibility: visible;
-    background:rgba(255,255,255,0.5);
-    transition: ease-in 1s;
-    height:50vh;
+    background:rgba(255,255,255,0.7);
+    transition: ease-out 1s;
+    width:100vw;
+   align-items: center;
 }
 
 /* Medium screen sizes */
@@ -111,7 +112,7 @@ sup {
     font-size: 12px;
     border: 1px solid black;
     text-transform: capitalize;
-    /* position:fixed; */
+    position:fixed;
 }
 
 
@@ -122,7 +123,7 @@ sup {
 
     header {
         flex-direction: row-reverse;
-        justify-content: ;
+        
     }
     .navigation {
         width:100%;
@@ -141,9 +142,9 @@ sup {
          color:#faa13c;
     }
     nav ul {
-       
+        /* margin-bottom:100px; */
         position: absolute;
-        margin-top:50px;
+        
       
         visibility:hidden;
         display: inline-block;
@@ -194,14 +195,9 @@ sup {
     }
     .description p{
        
-        /* margin-top:1em; */
-        /* margin-right: 1em; */
+      
         font-size:1em;
-       
-        /* width: 30vw;
-        height: 25%; */
-        /* align-self: center; */
-           
+                  
     }
    
     .description img {
@@ -215,5 +211,44 @@ sup {
        
      
     }
+
+    .register h1 {
+       
+        font: italic 20px 'Nunito Sans', sans-serif;
+    }
+    
+    .register p {
+        font: italic 1em 'Nunito Sans', sans-serif;
+    }
+    
+    .register label {
+        display: block;
+        color:#888;
+        margin-bottom: 15px;
+        font: 13px 'Nunito Sans', sans-serif;
+    }
+    
+    .inner {
+        padding: 10px;
+    }
+  
+    
+    .highlight {
+       
+        font-size: 15px;
+    }
+    .newsletter {
+        color:#888;
+        font-size: 15px;
+      
+    }
+    
+    input[type='submit'] {
+       
+        font: normal 10px 'Nunito Sans', sans-serif;
+       
+        
+    }
+    
 
 }}
