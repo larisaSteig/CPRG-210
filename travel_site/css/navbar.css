@@ -74,9 +74,11 @@ button {
 
 .visible {
     visibility: visible;
-    background:rgba(255,255,255,0.8);
+    background: linear-gradient(rgb(169, 197, 216, 0.8), white);
+    align-items: center;
     transition: ease-out 1s;
-    height:50vh;
+    height:100vh;
+    width:100vw;;
 }
 
 /* ******************************************FOOTER*********************************** */

@@ -1,19 +1,7 @@
-/* responsive design for smaller sizes */
 
-/*  Toggle button for the nav bar */
 
-button {
-    display: none;
-}
-.visible {
-    visibility: visible;
-    background:rgba(255,255,255,0.7);
-    transition: ease-out 1s;
-    width:100vw;
-   align-items: center;
-}
 
-/* Medium screen sizes */
+/**************************************** TABLET SIZE SCREEN *****************************************************/
 @media (max-width: 1120px) {
     header {
         flex-direction: column;
@@ -56,7 +44,7 @@ button {
         font-size: 1.5em;
         margin-right: 10%;
         width: 25%;
-        color:#268545;
+        color:#faa13c;
     }
      .description p{
         /* width: 30%; */
@@ -81,43 +69,37 @@ button {
 
    /* registration page */
 
-   /* REGISTRATION FORM */
-
-.register {
-  
-    width:50vw;
-}	
+    .register {
+    
+        width:50vw;
+    }	
 
 
-button:hover {
-    opacity:1;
-}
+    button:hover {
+        opacity:1;
+    }
 
-sup {
-    color:red;
-}
-/* .cancelbtn {
-    padding: 8px 20px 8px 20px;
-    background-color: #268545;
-    color: #faa13c;
-  } */
+    sup {
+        color:red;
+    }
 
-  footer {
-    position: absolute;
-    bottom:0;
-    width: 99.9%;
-    background-color: lightskyblue;
-    color: black;
-    text-align: center;
-    font-size: 12px;
-    border: 1px solid black;
-    text-transform: capitalize;
-    position:fixed;
-}
+
+    footer {
+        position: absolute;
+        bottom:0;
+        width: 99.9%;
+        background-color: lightskyblue;
+        color: black;
+        text-align: center;
+        font-size: 12px;
+        border: 1px solid black;
+        text-transform: capitalize;
+        position:fixed;
+    }
 
 
 
-/* small screen sizes */
+/**************************************** PHONE SIZE SCREEN ********************************************/
 
 @media (max-width: 680px) {
 
@@ -128,8 +110,10 @@ sup {
     .navigation {
         width:100%;
         justify-content:flex-start;
-       
         margin-bottom: 0;
+        position: relative;
+
+
     }
     
     .logo, .logo a{
@@ -144,13 +128,13 @@ sup {
     nav ul {
         /* margin-bottom:100px; */
         position: absolute;
-        
-      
+    
         visibility:hidden;
         display: inline-block;
         flex-direction: column;
         align-items: flex-start;
         padding-left:0;
+      
             
     }
     
@@ -159,10 +143,12 @@ sup {
         padding: 0.5em;
         left:0;
         top:0;
-        font-size: 1em;
+        font-size: 1.2em;
         text-align: center;
         border-top: 1px solid rgba(255,255,255,0.3); 
         border-bottom: 1px solid rgba(0,0,0,0.1);
+       
+       
      
     }
   
@@ -244,11 +230,11 @@ sup {
     }
     
     input[type='submit'] {
-       
         font: normal 10px 'Nunito Sans', sans-serif;
-       
-        
+               
     }
+
+    
     
 
 }}
