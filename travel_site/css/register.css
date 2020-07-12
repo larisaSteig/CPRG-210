@@ -77,7 +77,10 @@ input[type="password"]{
     border: 2px solid #fff;
 	box-shadow: inset 0px 1px 1px rgba(0, 0, 0, 0.33);
 }
-
+input:invalid {
+    background-color: #ffdddd;
+}
+}
 .highlight {
     font: normal 20px 'Nunito Sans', sans-serif;
 	color: #268545;

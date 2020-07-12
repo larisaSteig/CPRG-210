@@ -67,7 +67,7 @@
    }
     
 
-   /* registration page */
+   /************* registration page *************/
 
     .register {
     
@@ -83,7 +83,20 @@
         color:red;
     }
 
+    /**********gallery page************* */
+    .wrapper {
+        display: flex;
+      
+        width: 80%;
+      
+        margin:0 auto;
+        flex-wrap: wrap;
+        align-items: center;
+        /* justify-content: space-evenly; */
+        flex-direction: column;
+      }
 
+      /* ***********footer************* */
     footer {
         position: absolute;
         bottom:0;
@@ -192,7 +205,7 @@
     }
 
     #content {
-        
+        opacity:0.8;
         width:300px;
        
      
