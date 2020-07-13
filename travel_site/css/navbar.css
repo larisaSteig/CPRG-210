@@ -42,6 +42,7 @@ h1 a{
     display:flex;
     list-style-type: none;
     
+    
 
 }
 
@@ -67,18 +68,21 @@ h1 a{
     border-radius: 15%;
 }
 
-button {
+/* .navigation button {
+    display: none;
+} */
+
+#toggle{
     display: none;
 }
 
 
 .visible {
     visibility: visible;
-    background: linear-gradient(rgb(169, 197, 216, 0.8), white);
+    background: white;
     align-items: center;
-    transition: ease-out 1s;
     height:100vh;
-    width:100vw;;
+    
 }
 
 /* ******************************************FOOTER*********************************** */

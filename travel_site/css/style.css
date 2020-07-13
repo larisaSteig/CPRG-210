@@ -17,7 +17,7 @@ header {
     height: 50vh; 
     background:lightblue url('../img/main.jpg') no-repeat 85% 25%; 
     background-size: cover; 
-    
+   
     align-items: flex-end;
   
 }
@@ -44,20 +44,20 @@ header {
     color:#268545
 }
 
-.hero button {
+
+.hero a {
+    text-decoration:none;
     background: #faa13c;
-	padding: 8px 20px 8px 20px;
+    padding: 8px 20px 8px 20px;
     border-radius: 5px;
     color: #268545;
     text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.12);
-    font: normal 30px 'Nunito Sans', sans-serif;
-    box-shadow: inset 0px 2px 2px 0px rgba(255, 255, 255, 0.17);
+    font: normal 20px 'Nunito Sans', sans-serif;
 	border: 1px solid #257C9E;
-    font-size: 20px;
     font-weight: 700;
-    /* opacity: 0.7; */
-    margin-right:18%;
+    margin-right: 20%;
 }
+
 
 /*************************** SECOND PART OF THE PAGE****************/
 .description div {

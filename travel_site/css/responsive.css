@@ -21,7 +21,7 @@
 
     .navigation ul {
         margin-bottom: 0;
-        margin-top:0;
+        margin-top: 0;
     }
 
     .navigation a {
@@ -125,6 +125,7 @@
         justify-content:flex-start;
         margin-bottom: 0;
         position: relative;
+   
 
 
     }
@@ -138,8 +139,14 @@
     .hero p{
          color:#faa13c;
     }
+
+    .navigation ul {
+        margin-bottom: 0;
+        margin-top: 50px;
+    }
+
     nav ul {
-        /* margin-bottom:100px; */
+     
         position: absolute;
     
         visibility:hidden;
@@ -147,7 +154,7 @@
         flex-direction: column;
         align-items: flex-start;
         padding-left:0;
-      
+        
             
     }
     
@@ -164,8 +171,8 @@
        
      
     }
-  
-    nav button {
+    
+    #toggle {
         order:-1;
         display:inline-block;
         width: 50px;
@@ -264,4 +271,4 @@
       
     
 
-}}
+}

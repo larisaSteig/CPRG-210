@@ -59,7 +59,7 @@ header {
     text-align: center;
 }
 
-
+/* a line between LogIN and input field */
 #content h2:after {
 	content: "";
 	display: block;
