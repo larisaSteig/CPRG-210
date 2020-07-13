@@ -1,4 +1,6 @@
-
+body {
+    margin:auto;
+}
 /*************************** HEADER  / HERO /DIV set up************************/
 header {
     display: flex;
@@ -21,15 +23,26 @@ header {
     align-items: flex-end;
   
 }
-.description{
+
+/***************************Section about US *******************************/
+.total{
     display:flex; 
+    flex-direction: column;
     justify-content: space-around;
-    
-    width: 90vw;
+    font-size: 1.5em;
+    width: 80vw;
     margin: auto;
  
 }
-/****************************** HERO DIV elements************************** */
+
+h2 {
+    text-transform: capitalize;
+    font-size: 1.5em;
+    color: #faa13c;
+    text-shadow: black 2px 2px;
+    margin-top: 2em;
+}
+/****************************** HERO elements************************** */
 
 .hero h1 {
     margin: 5% 10% 0 0;
@@ -59,44 +72,39 @@ header {
 }
 
 
-/*************************** SECOND PART OF THE PAGE****************/
-.description div {
-    width: 50%;
+/*************************** SET UP GALLERY SECTION AND H2 to contact us and Destination****************/
+
+.gallery {
     display: flex;
-    flex-flow: column;
-    font-size: 1.5em;
+    flex-direction: column;
+}
+
+#destination, #contact {
+    width: 80vw;
+    margin:auto;
+    margin-bottom: 2%;
+    margin-top: 2%;
+    
 
 }
 
-.description h2 {
-    font-size: 1.5em;
-    color: #faa13c;
-    text-shadow: black 2px 2px;
-    margin-top: 2em;
-
-}
-
-.description img {
-    margin-top:2em;
-    height: 80vh;
-    /* flex: 2 1 380px; */
-    border-radius: 15%;
-    width: 40%;
-}
-
-.description ul {
-    margin:0;
-}
-
-.description p{
-    margin-top: 0;
-}
 
 /************************** CONTACT FORM ******************************/
 
+.form{
+    width: 80vw;
+    margin:auto;
+}
+
+.form ul {
+    width: 80vw;
+    margin:auto;
+    font-size: 1.2em;
+}
 #fs-frm{
     align-items: center;
     width: 80%;
+    margin:auto;
 }
 #fs-frm-inputs{
     display: flex;
@@ -139,3 +147,37 @@ input[type="submit"] {
   
 }
 
+/* *************Gallery destionation****************** */
+
+.wrapper {
+    display: flex;
+  
+    width: 80%;
+  
+    margin:0 auto;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+  }
+  
+  
+.wrapper a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+   
+  
+   
+ }
+img {
+     width: 400px;
+     margin-right: 10px;
+}
+  
+a[href*="www"]{
+     color: #FFA500;
+     text-decoration: NONE;
+     font-size: 1.5em;
+}
+  

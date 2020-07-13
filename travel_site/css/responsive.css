@@ -54,22 +54,7 @@
         margin-right: 15%;
     }
 
-     .description p{
-        /* width: 30%; */
-      
-        font-size:1em;
-       
-       
-    }
-    .description img {
-       
-        width: 40vw;
-        height: 60vh;
-        border-radius: 15%;
-        margin: auto 0.5em;
     
-    } 
-
    #contact {
        margin-top: 0.5em;;
    }
@@ -167,7 +152,7 @@
             
     }
     
-      .navigation a {
+    .navigation a {
         display: block; 
         padding: 0.5em;
         left:0;
@@ -189,7 +174,7 @@
         background: orange;
         line-height: 1.7;
         color: green;
-        /* float:left; */
+       
         
        
     }
@@ -198,26 +183,6 @@
         width: 100%;
         color:green;
         float:right;
-    }
-    .description div {
-       width: 100%;
-    }
-   
-    .description h2 {
-        margin-top:5px;
-        margin-bottom: 5px;;
-
-    }
-    .description p{
-       
-      
-        font-size:1em;
-                  
-    }
-   
-    .description img {
-      display: none;
-    
     }
 
     #content {
