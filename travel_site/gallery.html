@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="author" content="Larisa Steigenberge">
+        <meta name="date" content="12th July 2020">
+        <meta name="course module" content="CPRG 210 - Wed Application Development">
+        <meta name="assignment" content="Assignment 2 - Travel Experts Agency Website">
+        <!-- Custom CSS-->
+        <link rel="stylesheet" href="css/gallery.css">
+        <link rel="stylesheet" href="css/navbar.css">
+        <link rel="stylesheet" href="css/responsive.css">
+        
+         <!-- Google Font -->
+         <link href="https://fonts.googleapis.com/css?family=Nunito:200,300,400,700" rel="stylesheet">
+         <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;700&display=swap" rel="stylesheet">
+         <!--Font Awesome-->
+         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css">
+         <title>Adventure</title>
+    </head>
+    <body>
+        <!-- Header consist of navbar and button.The button will appear on mobile device only (max-width 660px) to present hamburger menue -->
+        <header>
+            <h1 class="logo" ><i class="fas fa-route"></i><a href="index.html"> Adventure</a></h1>  
+              <nav class ="navigation">
+                <ul>
+                    <li ><a href="index.html" >Home</a></li>
+                    <li><a href="gallery.html" class="active">Destination</a></li>
+                    <li><a href="index.html#contact">Contact Us</a></li>
+                    <li><a href="login.html" >Login</a></li>
+                    <li><a href="register.html">Sign Up</a></li>
+                </ul>
+                <button id="toggle"><i class="fas fa-bars"></i></button>
+              </nav>
+            
+          </header>
+     <!--Images will be populated from JS file and dinamically added to the page in calls ="wrapper"
+    ******** link with external website will be available as well as alt text to read if pisture is not present*****
+    ******** gallery.js file is the one attached to this html file with all the pictures. -->
+        <main>
+           
+            <div class="wrapper">
+                
+            </div>
+        </main>
+
+<script src="js/gallery.js"></script>                  
+</body>
+</html>

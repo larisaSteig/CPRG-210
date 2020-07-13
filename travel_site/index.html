@@ -25,7 +25,7 @@
        <nav class ="navigation">
         <ul>
           <li ><a href="index.html" class="active">Home</a></li>
-          <li><a href="gallery.html">Destination</a></li>
+          <li><a href="index.html#destination">Destination</a></li>
           <li><a href="index.html#contact">Contact Us</a></li>
           <li><a href="login.html">Login</a></li>
           <li><a href="register.html">Sign Up</a></li>
@@ -44,43 +44,54 @@
       <a href="register.html">JOIN US</a>
     </section>
 
-    <section class = "description">
+    <section>
       <div class="total">
           <h2> About us</h2>
           <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi ipsum ut iste, rem officia pariatur excepturi beatae labore odio deserunt, ratione dignissimos accusamus velit id dolores illum mollitia, optio impedit provident ea ullam nulla nisi? Velit, dignissimos perspiciatis error earum eveniet incidunt maxime suscipit veritatis. Incidunt rem quidem dolore ad!</p>
-          <h2 id="contact">Contact us</h2>
-        <ul>
-          <li>MAIN OFFICE
-            <ul>
-              <li> 403-200-7200</li>
-              <li> 100-310 Shawville Bld N.E., Calgary</li>
-            </ul>
-          </li>
-        </ul>
-
-        <form id="fs-frm" name="simple-contact-form" accept-charset="utf-8" action="https://formspree.io/xzbjjvyg" method="post">
-          <fieldset id="fs-frm-inputs">
-            <label for="full-name">Full Name</label>
-            <input type="text" name="name" id="full-name" placeholder="Michael Bubbly" required="">
-            <label for="email-address">Email Address</label>
-            <input type="email" name="_replyto" id="email-address" placeholder="email@domain.tld" required="">
-            <label for="message">Message</label>
-            <textarea rows="5" name="message" id="message" placeholder="What's the fizz?" required=""></textarea>
-            <input type="hidden" name="_subject" id="email-subject" value="Contact Form Submission">
-          </fieldset>
-          <input type="submit" value="Submit">
-        </form>
+         
         
       </div>
-        <img src="img/lake.jpg" alt="picture of a boat on a lake">
+        <!-- <img src="img/lake.jpg" alt="picture of a boat on a lake"> -->
     </section> 
-    
+
+    <section>
+      <h2 id="destination">DESTINATIONS!</h2>
+      <div class="wrapper"></div>
+
+    </section>
+
+    <div class="form">
+      <h2 id="contact">CONTACT US</h2>
+      <ul>
+        <li>MAIN OFFICE
+          <ul>
+            <li> 403-200-7200</li>
+            <li> 100-310 Shawville Bld N.E., Calgary</li>
+          </ul>
+        </li>
+      </ul>
+
+      <form id="fs-frm" name="simple-contact-form" accept-charset="utf-8" action="https://formspree.io/xzbjjvyg" method="post">
+        <fieldset id="fs-frm-inputs">
+          <label for="full-name">Full Name</label>
+          <input type="text" name="name" id="full-name" placeholder="Michael Bubbly" required="">
+          <label for="email-address">Email Address</label>
+          <input type="email" name="_replyto" id="email-address" placeholder="email@domain.tld" required="">
+          <label for="message">Message</label>
+          <textarea rows="5" name="message" id="message" placeholder="What's the fizz?" required=""></textarea>
+          <input type="hidden" name="_subject" id="email-subject" value="Contact Form Submission">
+        </fieldset>
+        <input type="submit" value="Submit">
+      </form>
+    </div>
   </main>
 
   <!-- Footer section  -->
   <footer>&copy;Adventure Travel Agency 2020 </footer>
 
-  <script>
+  <script src="js/gallery.js"></script>      
+
+  <!-- <script>
     const toggle =document.querySelector('#toggle')
    
     const menu = document.querySelector('nav ul')
@@ -88,6 +99,6 @@
     toggle.addEventListener('click', function(){
     menu.classList.toggle('visible')
     }) 
-  </script>      
+  </script>       -->
 </body>
 </html>
